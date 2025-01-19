@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom</title>
+</head>
+<body>
+    <h1>JS Window OBj</h1>
+
+    <!--? ========== Start Window Property ========== -->
+
+    <button onclick="window.open('https://thapatechnical.shop/courses', '_blank')">Navigate</button>
+
+     <!--? ========== End Window Property ========== -->
+
+    <!--? ========== Start History ========== -->
+   <h1>JavaScript History Object</h1>
+   <button onclick="history.back()">Go Back</button>
+   <button onclick="history.forward()">Go forward</button>
+   <button onclick="history.go(-1)">Move Backward and forward</button>
+
+   <h1>JavaScript Location Object</h1>
+    <button onclick="location.reload()">Reload the Page</button>
+    <button
+      onclick="window.location.replace('https://www.thapatechnical.com/')">Navigate Page using replace
+    </button>
+    <button onclick="location.assign('https://kodyfier.com/')">
+        Navigate Page with Assign
+      </button>
+
+      <!--? ========== Start Screen ========== -->
+    <h1>JavaScript Screen Object</h1>
+    <p>We will see in console.</p>
+    <!--? ========== End Screen ========== -->
+    
+
+
+    <script>
+        console.log(window.screen.pixelDepth)
+        console.log(window.screen.orientation)
+        console.log(window.screen.colorDepth)
+        console.log(window.screen.availWidth)
+        console.log(window.screen.width)
+        console.log(window.location.search)
+
+
+    </script>
+
+</body>
+</html>

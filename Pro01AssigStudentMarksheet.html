@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <style>
+        table ,tr,td ,th{
+            border: 2px solid black;
+            margin: auto;
+            height:50px;
+            width: 300px;
+            text-align: center;
+            border-collapse: collapse;
+            font-weight: bold ;
+        }
+
+        th{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <script>
+           let name=prompt("Enter the Name :-")
+           let rollno=prompt("Enter the Roll No :-")
+
+           let eng=parseInt(prompt("Enter the English Marks :-"))
+           let math=parseInt(prompt("Enter the Math Marks :-"))
+           let sci=parseInt(prompt("Enter the Science Marks :-"))
+           let his=parseInt(prompt("Enter the History Marks :-"))
+           let geo=parseInt(prompt("Enter the Geography Marks :-"))
+
+           let total=eng+math+sci+his+geo;
+
+           let percentage=(total*100)/500
+
+           document.write("<table>")
+
+            document.write(`<tr><th>Subject Name</th><th>Marks</th></tr>`)
+
+           document.write(`<tr><td>English</td>   <td>${eng}</td></tr>`)
+           document.write(`<tr><td>Math  </td>  <td> ${math} </td></tr>`)
+           document.write(`<tr><td>Science </td>  <td>${sci} </td></tr>`)
+           document.write(`<tr><td>History </td>  <td> ${his}  </td></tr>`)
+           document.write(`<tr><td>Geography  </td>  <td> ${geo} </td> </tr>`)
+
+           document.write(`<tr > <td colspan="2">Total=${total}</td> </tr>`)
+
+           document.write(`<tr><td colspan="2">Percentage=${percentage}</td></tr>`)
+
+
+           document.write("</table>")
+    </script>
+</body>
+</html>

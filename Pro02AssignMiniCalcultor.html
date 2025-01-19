@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <style>
+
+        table{
+            border: 5px solid palevioletred;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            padding: 30px;
+            width: 500px;
+            height:250px ;
+            
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <form name="f1">
+
+        <table >
+            <caption><h3>Mini Calculator</h3></caption>
+            <tr>
+                <td><label for="first">Enter First No:</label></td>
+                <td><input id="first" type="number" name="fno"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Second">Enter First No:</label></td>
+                <td><input id="first" type="number"  name="sno"></td>
+            </tr>
+            <tr>
+                <td><label >Result</label></td>
+                <td><input type="number" name="result"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Add" onclick="add()">
+                    <input type="button" value="Sub" onclick="sub()">
+                    <input type="button" value="Mul" onclick="mul()">
+                    <input type="button" value="Div" onclick="div()">
+                    <input type="button" value="Clear" onclick="clear1()">
+                </td>
+
+                
+            </tr>
+        </table>
+    </form>
+    <script src="Pro02AssignMiniCalculator.js"></script>
+</body>
+</html>

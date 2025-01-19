@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        //Creating array using constructor
+        let fruit=new Array('apple','mango','banana')
+        document.write(fruit)
+
+        //Creatin array using literals
+        let veg=["tomato","potato"]
+        document.write(veg)
+
+
+        //accessing element
+        console.log(veg[0]);
+        console.log(veg["potato"]);
+        
+
+        //ModyingElement
+        veg[1]="spanish";
+        console.log(veg)
+
+        //*  Array Traversal / Iterating Over Arrays
+
+        let fruits=["apple","mango","grapes","banana"];
+        
+         //? 1: for of loop , also known as iterable
+        for(let item of fruits)
+        {
+            console.log(item);
+        }
+
+        for(let item=0;item<fruits.length;item++)
+        {
+            console.log(fruits[item])
+        }
+
+        //? 2: for in loop
+        for(let item in fruits)
+        {
+            console.log(item)
+        }
+
+        // ? 3: forEach Method
+       const myForEach=fruits.forEach((curElem,index,arr) =>  {
+                return `${curElem} ${index} `;
+                //console.log(arr);
+             }
+        );
+        console.log(myForEach);
+        
+
+        // ? 4: map function
+        const myMap=fruits.map((curElem,index,arr) =>{
+            return `my fav fruits is ${curElem}  ${index} `;
+        })
+        
+        console.log(myMap);
+        console.log(fruits);
+        
+        //* ==========================================================================
+        //*  How to Insert, Add, Replace and Delete Elements in Array(CRUD) - p1
+        //* ==========================================================================
+        
+        console.log(fruits.push("guaua"))
+        console.log(fruits);
+        //? 2: pop(): Method that removes the last element from an array.
+         console.log(fruits.pop());
+         console.log(fruits);
+         //? 3: unshift(): Method that adds one or more elements to the beginning of an array.
+        console.log(fruits.unshift("guava"));
+        console.log(fruits);
+        //? 4: shift(): Method that removes the first element from an array.
+        console.log(fruits.shift());
+        console.log(fruits);
+
+         fruits.splice(1, 1, "grapes");
+         console.log(fruits);
+
+         fruits.splice(-1, 0, "grapes");
+         console.log(fruits);
+
+        fruits.splice(1, 0, "grapes");
+        console.log(fruits);
+
+        // Syntax
+        // includes(searchElement);
+        // includes(searchElement, fromIndex);
+
+
+
+
+        //push  pop  shift unshift splice  includes(for searching)
+        // The splice() method of Array instances changes the contents of 
+        // an array by removing or replacing existing elements 
+        // and/or adding new elements in plac
+
+
+        //! write a program to Multiply each element with 2
+        const numbers=[1,2,3,4,5];
+        numbers.forEach((curElem) =>
+        {
+           console.log(curElem*2);
+           
+         });
+
+
+         const doubleValue=numbers.map((curElem)=>
+        {
+            return curElem*2;
+        });
+
+        console.log(doubleValue);
+
+        //* =========================================
+          //*  Filter in an Array
+        //* =========================================
+        const number=[1,2,3,4,5,6,7,8,9]
+
+        //? 1: find Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
+        const result=number.find((curElem)=>
+             {
+                return curElem>6;
+
+               });
+        console.log(result);
+
+        //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+         const res=number.map((curElem) => curElem*5);
+         console.log(res);
+
+         const res2=res.findIndex((curElem) => {
+            return curElem>15;
+         })
+
+         console.log(res2);
+
+
+         //* 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
+         // syntax:
+        //? filter(callbackFn)
+         //? filter(callbackFn, thisArg)
+
+         const res3=number.filter((curElem) =>{
+            return curElem >7;
+         });
+         console.log(res3);
+
+         // UseCase: In E-commerce website when we want to Remove or delete any product from addToCart page.
+         //! Ex. le'ts say user wants to delete value 6.
+         let value=6;
+         const no=[1,2,3,4,5,6,7,8,9];
+
+         let updateCart=no.filter((curElem) => {
+            return curElem!==value;
+         });
+
+         console.log(updateCart);
+         
+
+         //filtering products by price
+         const products=[{name:"laptop",price:1200},{name:"Phone",price:800},{name:"Tablet",price:300},{name:"SmartWatch",price:150}];
+
+         const filterPro=products.filter((curElem)=>{
+            return curElem<=500;
+            
+         })
+         console.log(filterPro);
+        //------------------------------- 
+
+         //Original array of number
+         const num1=[1,2,3,4,5];
+
+         //using map to square each number and create a new Array
+         let res5=num1.map((curElem)=>curElem*curElem);
+         console.log(res5);
+
+         //! 1: Using the map method, write a function that takes an array of strings and returns a new array where each string is capitalized.
+         const words=["apple","banana","cheery","date"];
+
+         const res6=words.map((curElem)=>{
+            return curElem.toUpperCase();
+         })
+
+         console.log(res6)
+
+         //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
+
+         const num2=[1,2,3,4,5];
+
+         const res7=num2.map((curElem) =>
+           {
+            if(curElem %2==0)
+              {
+                return curElem*curElem;
+              }
+           }).filter((curElem)=> curElem!==undefined);
+
+        console.log(res7);
+        
+         
+
+
+
+         
+
+         
+         
+        
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

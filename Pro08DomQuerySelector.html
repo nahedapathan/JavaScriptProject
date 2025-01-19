@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUery Selector</title>
+</head>
+<body>
+    <p class="c1"> This is para one</p>
+
+    <h1>Css is Cascading Style Sheet</h1>
+
+    <p class="c1">This is para two</p>
+
+    <h2>This is heading two</h2>
+
+    <input type="button" value="getElementbySelector" onmouseover="over()" onmouseout="out()">
+
+    <input type="button" value="getAllElementby Selector" onmouseover="over1()" onmouseout="out1()">
+
+
+
+    <script>
+        function over()
+        {
+            let ele=document.querySelector(".c1")
+            ele.style.backgroundColor="yellow"
+            ele.style.color="blue"
+            ele.style.fontSize="30px"
+        }
+
+        function over1()
+        {
+            let ele=document.querySelectorAll(".c1")
+            for(let i=0;i<ele.length;i++)
+            {
+                   ele[i].style.backgroundColor="palevioletred"
+                   ele[i].style.color="black"
+                   ele[i].style.fontSize="50px"
+             }
+    }
+
+
+        function out()
+        {
+            let ele=document.querySelector(".c1")
+            ele.style.backgroundColor=""
+            ele.style.color=""
+            ele.style.fontSize=""
+        }
+
+        function out1()
+        {
+            let ele=document.querySelectorAll(".c1")
+            for(let i=0;i<ele.length;i++)
+            {
+                   ele[i].style.backgroundColor=""
+                   ele[i].style.color=""
+                   ele[i].style.fontSize=""
+             }
+    }
+    </script>
+</body>
+</html>

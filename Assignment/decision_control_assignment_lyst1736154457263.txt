@@ -1,0 +1,56 @@
+1. - Design Half Faulty Calculator
+
+Design a calculator which will correctly solve all the problems except
+# the following ones: 
+# 45 * 3 = 555, 56 + 9 = 77, 56 / 6 = 4 
+# Your program should take operator  and the two numbers as input from the user
+# and then print the result
+
+________________________________________________________________________________________________
+
+2.Write a Javascript program to find the eligibility of admission for a professional course based on the following criteria: 
+Marks in Maths >=65
+Marks in Phy >=55
+Marks in Chem>=50
+Total in all three subject >=180
+
+_______________________________________________________________________________________________
+
+
+3. To ask user that how many days in a leap year. 
+	a. if user will get correct ans -
+        then print "You have cleared the first level" and ask again another que "What month has an extra day in leap year?" if user will get correct answer then display message "Congratulations !!You have cleared the test" otherwise "You have failed the test".
+
+b.otherwise print following msg-
+
+      "Your input is wrong, please try again."
+_______________________________________________________________________________________________
+
+4. If the three sides of a triangle are entered through the keyboard, write a program to check whether thr triangle is valid or not. The triangle is valid if the sum of two sides is greater than the largest of the three sides.
+
+_________________________________________________________________________________________________________________________________
+
+5. Write a Javascript program to input any alphabet and check whether it is vowel or consonant.
+
+________________________________________________________________________________________________________________________________
+
+6.Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+
+________________________________________________________________________
+
+7.Write a Javascript program to input basic salary of an employee and calculate its Gross salary according to following:
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+Gross Salary = bs + hra +da
+
+______________________________________________________________________________________________________________________________________
+
+8.Write a Javscript program to check whether a number is divisible by 5 and 11 or not.

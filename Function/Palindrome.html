@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        const isPalindrome= (str) => {
+
+            let reverse="";
+            for(let char=str.length-1;char>=0;char--)
+            {
+               reverse=reverse+str[char];
+             }
+             if(str===reverse)
+                 {
+                    return true;
+                  }
+                  else{
+                    return false;
+                  }
+        };
+
+        console.log(isPalindrome("level"))
+
+
+    </script>
+</body>
+</html>

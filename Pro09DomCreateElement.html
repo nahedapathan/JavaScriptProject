@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    
+    <p>This is para one</p>
+    <h1>JS is Scripting language</h1>
+    <h3 id="hed1"></h3>
+
+
+    <input type="button" value="createnewPara" onmouseover="createElmnt()">
+
+    <input type="button" value="Change inner Html" onmouseout="changeFun()" onmouseover="over()">
+    <input type="button" value="remove Para">
+    <input type="button" value="Addition" onclick="clickFun()">
+
+
+    <script>
+        function createElmnt()
+        {
+            let para=document.createElement("p")
+            para.innerHTML="This is new para "
+            document.body.appendChild(para)
+        }
+        
+
+        function changeFun()
+        {
+           let hed=document.querySelector("h1")
+           hed.innerHTML=("Css is Cascading style Sheet")
+        }
+
+
+        function over()
+        {
+             let hed=document.querySelector("h1")
+             hed.innerHTML="JS is Scripting Lanaguage"
+        }
+
+        function clickFun()
+        {
+            let a=parseInt(prompt("Enter First Number"))
+            let b=parseInt(prompt("Enter Second Number"))
+            let ans=a+b
+            hed1.innerHTML=`Addition:- ${ans}`
+        }
+
+    </script>
+
+    
+</body>
+</html>
